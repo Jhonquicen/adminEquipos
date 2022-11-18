@@ -9,7 +9,7 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route path="/" exact render={()=> <TodosEquipos />} />
-          <Route path="/estado" exact render={()=> <EstadoJugador />} />
+          <Route path="/estado/:id" exact render={(routeProps)=> <EstadoJugador {...routeProps}/>} />
           <Route path="/lista" exact render={()=> <Lista />} />
           
         </Switch>

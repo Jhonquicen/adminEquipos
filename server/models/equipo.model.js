@@ -17,11 +17,8 @@ const EsquemaEquipo = new mongoose.Schema({
     
 
     accion: {
-        type: String,
-        enum: {
-            values: ['jugando', 'no jugando', 'indeciso'],
-            message: "estado invalido"
-        },
+        type: Array,
+        default: ["undecided","undecided","undecided"],
         required: [true, "el estado es obligatorio"]
     },
 

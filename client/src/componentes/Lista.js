@@ -44,7 +44,7 @@ const Lista = () => {
 
     return (
         <div className="container">
-            <Link to="/lista" >Lista</Link> | <Link to="/" >Añadir jugador</Link> | <Link to="/estado" >Administrar jugadores</Link>
+            <Link to="/lista" >Lista</Link> | <Link to="/" >Añadir jugador</Link> | <Link to="/estado/1" >Administrar jugadores</Link>
             <h1>Lista de jugadores - {guardarEstado}</h1>
             <table className="table table-hover">
                 <thead>
